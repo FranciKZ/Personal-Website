@@ -1,0 +1,3 @@
+
+## KanjiDraw
+One of my hobbies is learning Japanese and one of the tools I use is WaniKani, a website focused on one of the Japanese writing systems, kanji. Given there is no official app and the unnofficial apps always left something to be desired, I started work on developing my own. Still in early stages of development, KanjiDraw is writting using react-native and typescript. Current functionality is limited to basic statistics around lessons/reviews and browsing the various kanji, vocab, and radicals that WaniKani has to offer. 

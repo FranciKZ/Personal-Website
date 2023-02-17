@@ -1,0 +1,3 @@
+## Order Display System
+
+I wrote an order display system for Brewed Awakening Vermilion to notify workers when new online orders were placed for local pickup. This system runs on a Raspberry Pi Zero that hosts a Node JS web server. I used the Express and Bootstrap frameworks to display the orders page. Orders are read by a Python script which passes the data to the server through a websocket which would then pass it along to the front end. I also took advantage of the onoff node module to manage buttons wired directly to the Raspberry Pi. This allowed for employees to interact with the system to remove orders when they have finished fulfilling them. 

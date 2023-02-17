@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const projects = await Astro.glob('./projects/*.md'); 
+---
+
+<Layout title="Projects | Kollin Francis">
+  <div class="w-3/5 my-10 m-auto">
+    { projects.map(({ Content }) => (
+        <div class="my-4 [&>ul]:list-disc [&>ul]:m-0 [&>ul]:px-8 [&>ul]:py-2 [&>h2]:text-3xl [&>h3]:text-2xl [&>h4]:text-xl">
+          <Content />
+        </div>
+      ))
+    }
+  </div>
+</Layout>

@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import type { string } from 'astro/zod';
+
+type WorkFrontmatter = { 
+  current: string;
+  url: string;
+  company: string;
+  order: string;
+};
+
+const workExperience = await Astro.glob<WorkFrontmatter>('./work/*.md'); 
+---
+
+<Layout title="Work | Kollin Francis">
+  <div class="w-3/5 my-10 m-auto">
+    { workExperience.sort((a, b) => +b.frontmatter.order - +a.frontmatter.order).map(({ Content }) => (
+        <div class="my-4 [&>ul]:list-disc [&>ul]:m-0 [&>ul]:px-8 [&>ul]:py-2 [&>h2]:text-3xl [&>h3]:text-2xl [&>h4]:text-xl">
+          <Content />
+        </div>
+      ))
+    }
+  </div>
+</Layout>

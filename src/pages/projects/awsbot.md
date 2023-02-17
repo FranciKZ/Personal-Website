@@ -1,0 +1,2 @@
+## AWS Discord Bot
+Developed a simple discord bot to manage an AWS EC2 instance. The primary purpose of which is to host a game server, which the bot will stop or start based on user commands. It was developed using Typescript and deployed locally to a raspberry pi with Docker. 
