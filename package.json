@@ -9,9 +9,6 @@
 		"preview": "astro preview",
 		"astro": "astro"
 	},
-	"pnpm": {
-		"onlyBuiltDependencies": ["esbuild", "sharp"]
-	},
 	"dependencies": {
 		"@astrojs/mdx": "^7.0.0",
 		"@astrojs/tailwind": "^6.0.2",
